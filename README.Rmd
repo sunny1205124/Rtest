@@ -36,9 +36,7 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 library(Rtest)
 ## basic example code
-data(data.X)
-data(data.Y)
-Y1 <- data.Y[, 1]
-Y2 <- data.Y[, 2]
-LEMC.est <- LEMC(data.X, Y1, Y2, N.jackknife = 200, cl.cores = 2)
+data("data.omics")
+PCA.data <- PCA.analysis(data.omics)
+PCA.data
 ```
